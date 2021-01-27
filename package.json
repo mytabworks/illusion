@@ -1,0 +1,54 @@
+{
+  "name": "illusion",
+  "version": "1.0.0",
+  "description": "illusion for javascript class",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "scripts": {
+    "start": "parcel --no-cache src/demo.html",
+    "build": "parcel build src/index.ts --target node --bundle-node-modules"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-for-of",
+        {
+          "assumeArray": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytabworks/illusion.git"
+  },
+  "keywords": [
+    "illusion",
+    "javascript",
+    "class",
+    "magic"
+  ],
+  "author": "mytaboworks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mytabworks/illusion/issues"
+  },
+  "homepage": "https://github.com/mytabworks/illusion#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
+  }
+}
