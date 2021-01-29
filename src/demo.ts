@@ -21,18 +21,22 @@ import Illusion from '../dist/index'
           };
 
           __get(name: string) {
+            console.log('get')
             return this.attributes[name];
           }
 
           __set(name: string, value: number) {
+            console.log('set')
             this.attributes[name] = value;
           }
 
           __isset(name: string) {
+            console.log('isset')
             return name in this.attributes;
           }
 
           __unset(name: string) {
+            console.log('unset')
             delete this.attributes[name];
           }
 
@@ -41,10 +45,12 @@ import Illusion from '../dist/index'
           }
 
           static __getStatic(name) {
+            console.log('getstatic')
             return this.sattr[name];
           }
 
           static __setStatic(name, value) {
+            console.log('setstatic')
             this.sattr[name] = value;
           }
         }
