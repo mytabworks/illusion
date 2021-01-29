@@ -1,6 +1,6 @@
 {
   "name": "illusionjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "illusion for javascript class",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
